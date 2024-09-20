@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+<body>
+    <div id="wrapper">
+        <h1>My Feedback Form</h1>
+
+        <form action="mailto:ahmed.sheikh@ontariotechu.ca"
+            method="post" enctype="text/plain" ?subject=Mistakes
+            name="form">
+
+            <p>
+                <label for="name">Name :</label>
+                <input type="text" name="name" placeholder="Your Complete Name" size = "32">
+            </p>
+
+            <p>
+                <label for="email">Email :</label>
+                <input type="email" name="email" placeholder="Your email address" size = "48">
+            </p>
+
+            <p>
+                <label for="comments">Comments :</label>
+                <br><br>
+                <textarea type="comment" name="comment" cols="40" rows="8"></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" name="maillist">
+                <label for="mailist">Put me on the list for subscription</label>
+            </p>
+
+            <p>
+                <label for="where"> How did you find us</label>
+                <select name="where">
+                    <option value="Search Engine">Search Engine</option>
+                    <option value="Social Network">Social Network</option>
+                    <option value="Words of Mouth">Words of Mouth</option>
+                    <option value="Other">Other</option>
+                </select>
+            </p>
+                <label for="where"> Where do you live?</label>
+                <select name="where">
+                    <option value="Canada">Canada</option>
+                    <option value="United States">United States</option>
+                    <option value="Mexico">Mexico</option>
+                </select>
+            <p>
+                
+            </p>
+
+        <p>
+            <input type="submit" value="Click to submit the form">
+        </p>
+
+        <p>
+            <input type="reset" value="Click to reset the form">
+        </p>
+
+        </form>
+
+    </div>
+</body>
+
+
+</html>
+
