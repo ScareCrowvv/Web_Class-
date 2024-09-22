@@ -1,96 +1,321 @@
 @charset "UTF-8";
-body
-{
+body{
 background-color: black;
-background: -moz-linear-gradient(top, rgb(48, 2, 59) 0%, black 100%); 
-    background: -webkit-linear-gradient(top, rgb(48, 2, 59) 0%, black 100%); 
-    background: -o-linear-gradient(top, rgb(48, 2, 59) 0%, black 100%); 
-    background: linear-gradient(to bottom, rgb(48, 2, 59) 0%,black 100%);
+background: -moz-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
+    background: -webkit-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
+    background: -o-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
+    background: linear-gradient(to bottom, rgb(46, 109, 204) 0%,white 100%);
     font-family: Verdana, Geneva, Arial, sans-serif;
 font-family: Verdana, Geneva, Arial, sans-serif;
 padding:0px;
-margin:0px;
-}
-h1,h2,h3,h4,h5,h6,p,li
-{
-margin-left:15px;
-}
-#wrapper
-{
-width: 66%;
+margin:0px;}
+
+#wrapper{
+width: 960px;
 height: 800px;
 margin-left: auto;
 margin-right: auto;
-background-color:rgb(1, 1, 1);
-}
-#right-column
-{
-float: right;
-width: 66%;
-height: 700px;
 background-color:gray;
 }
-#left-column
-{
-float: left;
-width: 33%;
-height: 700px;
-background-color: gray;
+
+#short_wrapper{
+width: 960px;
+height: 650px;
+margin-left: auto;
+margin-right: auto;
+background-color:gray;
 }
-#footer
-{
-height:50px;
-color: white;
-background-color: rgb(43, 25, 42);
+
+#right-column{
+float: right;
+width: 460px;
+height: 730px;
+margin-top: 10px;
+margin-right: 10px;
+background-color:white;
+border: 3px solid black;
+}
+
+#right-column h4{
+font-size: 20px;
+
+}
+
+#right-column img{
+    width: 460px;
+    height: 350px;
+}
+
+#right-column a{
+    text-decoration: none;
+    color: rgb(0, 63, 140);
+}
+
+#right-column a:hover{
+    color: rgb(144, 191, 249);
+}
+
+
+#left-column{
+float: left;
+width: 460px;
+height:730px;
+margin-top: 10px;
+margin-left: 10px;
+background-color: white;
+border: 3px solid black;
+}
+
+#left-column_middle{
+float: left;
+width: 460px;
+height: 400px;
+margin-top: 120px;
+margin-right: 10px;
+background-color:white;
+border: 3px solid black;
 text-align: center;
 }
-#banner
-{
+
+
+#short_right-column{
+float: right;
+width: 460px;
+height: 500px;
+margin-top: 10px;
+margin-right: 10px;
+background-color:white;
+border: 3px solid black;
+text-align: center;
+}
+
+#short_right-column h1{
+background-color: rgb(0, 63, 140);
+color: white;
+}
+
+
+#short_left-column{
+float: left;
+width: 460px;
+height:500px;
+margin-top: 10px;
+margin-left: 10px;
+background-color: white;
+border: 3px solid black;
+text-align: center;
+}
+
+#really_short_left-column{
+float: left;
+width: 460px;
+height:350px;
+margin-top: 10px;
+margin-left: 10px;
+background-color: white;
+border: 3px solid black;
+text-align: center;
+}
+
+#really_short_left-column img{
+    width: 460px;
+    height:350px;
+}
+
+#really_short_left-column h2{
+background-color: rgb(0, 63, 140);
+color: white;
+margin-top: 12px;
+}
+
+#really_short_left-column h4{
+font-size: 20px;
+}
+
+#really_short_right-column{
+float: right;
+width: 460px;
+height:350px;
+margin-top: 10px;
+margin-right: 10px;
+background-color: white;
+border: 3px solid black;
+text-align: center;
+}
+
+#really_short_right-column img{
+    width: 460px;
+    height:350px;
+}
+
+#really_short_right-column h2{
+background-color: rgb(0, 63, 140);
+color: white;
+margin-top: 12px;
+}
+
+#really_short_right-column h4{
+font-size: 20px;
+}
+
+.cyber{
+    width: 450px;
+    height: 450px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#footer{
 height:30px;
 color: white;
-background-color:rgb(43, 25, 42);
+background-color: rgb(0, 63, 140);
 text-align: center;
 }
 
-.box
-{
-height: 150px;
-width: 150px;
-float: left;
-background-color:tan;
-margin: 15px;
-opacity:.5;
-}
-
-.footer{
-    margin: 0px;
-    padding: 0px;
-}
-
-.a{
-    color: white;
-}
-
-.a:hover{
-    color: purple;
-}
-
-.a{
-    color: white;
-}
-
-.a:hover{
-    color: purple;
-}
-
-.navbar{
-    height:30px;
-    color: white;
-    background-color:rgb(43, 25, 42);
-    text-align: center;
+#footer a{
     text-decoration: none;
+    color: white;
+}
+
+#footer a:hover{
+    color: rgb(144, 191, 249);
+}
+
+#footer img{
+    width: 20px;
+    height: 20px;
+}
+
+#banner{
+ font-size: 20px;
+    height: 35px;
+    background-color: rgb(0, 63, 140);
+    text-align: center;
+}
+
+#banner a{
+    color: white;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: inline-block; 
+    background-color: rgb(0, 63, 140); 
+}
+
+#banner a:hover{
+    border: 3px white;
+    color: white;
+    background-color: rgb(144, 191, 249);
+}
+
+#banner img{
+    width: 25px;
+    height: 25px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.Form_Title{
+   background-color: rgb(0, 63, 140);
+    color: white;
+    font-size: 30px;
+   
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: white;
+    border: 3px solid rgb(0, 63, 140);
+    border-radius: 8px;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+label {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.type, textarea, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.Submit{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 63, 140);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.Submit:hover{
+    background-color: rgb(144, 191, 249);
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 15px;
+    padding: 25px;
+    opacity: .5;
+    border-radius: 75px;
+    background-color: aqua;
+}
+
+video{
+ width: 450px;
+ margin-top: 60px;
+ background-color: black;
+ border: 4px solid rgb(0, 63, 140);   
+}
+
+
+
+button{
+background-color: rgb(0, 63, 140);
+color: white;
+height: 50px;
+margin-top: 10px;
+border: 2px;
+box-shadow: 10px 10px 5px rgb(144, 191, 249);
+border-radius: 5px;
+text-align: center;
+border: 3px solid black;
+}
+
+
+button:hover{
+background-color: rgb(144, 191, 249);
+color: black;
+height: 50px;
+border: 2px;
+box-shadow: -10px -10px 5px rgb(0, 63, 140);
+border-radius: 5px;
+border: 3px solid black
 
 }
-.navbar:hover{
-    background-color: gray;
-}
+
+    
+
+
+
