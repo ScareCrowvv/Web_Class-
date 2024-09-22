@@ -2,6 +2,11 @@
 body
 {
 background-color: black;
+background: -moz-linear-gradient(top, rgb(48, 2, 59) 0%, black 100%); 
+    background: -webkit-linear-gradient(top, rgb(48, 2, 59) 0%, black 100%); 
+    background: -o-linear-gradient(top, rgb(48, 2, 59) 0%, black 100%); 
+    background: linear-gradient(to bottom, rgb(48, 2, 59) 0%,black 100%);
+    font-family: Verdana, Geneva, Arial, sans-serif;
 font-family: Verdana, Geneva, Arial, sans-serif;
 padding:0px;
 margin:0px;
@@ -16,31 +21,37 @@ width: 66%;
 height: 800px;
 margin-left: auto;
 margin-right: auto;
-background-color:LightSlateGrey;
+background-color:rgb(1, 1, 1);
 }
 #right-column
 {
 float: right;
 width: 66%;
-height: 600px;
-background-color:LightGray;
+height: 700px;
+background-color:gray;
 }
 #left-column
 {
 float: left;
 width: 33%;
-background-color:silver;
-height:600px;
+height: 700px;
+background-color: gray;
 }
 #footer
 {
-height:80px;
+height:50px;
+color: white;
+background-color: rgb(43, 25, 42);
+text-align: center;
 }
 #banner
 {
-height:120px;
-background-color:SlateGrey;
+height:30px;
+color: white;
+background-color:rgb(43, 25, 42);
+text-align: center;
 }
+
 .box
 {
 height: 150px;
@@ -50,7 +61,36 @@ background-color:tan;
 margin: 15px;
 opacity:.5;
 }
-.clear
-{
-clear: both;
+
+.footer{
+    margin: 0px;
+    padding: 0px;
+}
+
+.a{
+    color: white;
+}
+
+.a:hover{
+    color: purple;
+}
+
+.a{
+    color: white;
+}
+
+.a:hover{
+    color: purple;
+}
+
+.navbar{
+    height:30px;
+    color: white;
+    background-color:rgb(43, 25, 42);
+    text-align: center;
+    text-decoration: none;
+
+}
+.navbar:hover{
+    background-color: gray;
 }
