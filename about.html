@@ -22,9 +22,36 @@
             </header>
 
             
-                <div id="left-column">
+                <div id="left-column_middle">
+                    
+                    <video width="360" height="220" controls poster="on_record.mp4" preload="auto" autoplay loop muted id="myVid">
+
+                    <source src="on_record.mp4" type="video/mp4">
+                    <source src="on_record.ogv" type="video/ogv">
+
+                    </video>
+                <br>
+                <button onclick="PlayPause()">Play/Pause Button</button>
+                <script>
+                    var mybtn=document.getElementById("myVid");
+                    function PlayPause(){
+                        if(mybtn.paused)
+                            mybtn.play();
+                        else
+                            mybtn.pause();
+
+                    }
+                </script>
+                
+                
+
+
                 </div>
                 <div id="right-column">
+                    <img src="linkedln.png" alt="png">
+                    <a href="https://www.linkedin.com/in/daniel-b-0455b62ba/">Linkedin Page</a>
+                    <h4>My Name is Daniel I am a student at Ontario tech University currently in my second year at the program Networking & IT Security. 
+                        I have experience in first aid and teaching through the jobs I have taken as a lifeguard and swim instructor. You can learn more through my linkedin page about my skills and experiences.</h4>
 
                 </div>
         </div>
