@@ -21,12 +21,56 @@
                 </nav>
             </header>
 
-            
-                <div id="left-column">
-                </div>
-                <div id="right-column">
+        
+            <h1 class="Form_Title">My Feedback Form</h1>
 
-                </div>
+            <form action="mailto:daniel.borrelldiaz@ontariotechu.net"
+                method="post" enctype="text/plain" ?subject=Mistakes
+                name="form">
+
+                <p><label for="name">Name </label></p>
+                    <p><input type="text" name="name" placeholder="Your Complete Name" size = "48"></p>
+        
+
+                <p><label for="email">Email :</label></p>
+                   <p><input type="email" name="email" placeholder="Your email address" size = "48"></p>
+
+                <p><label for="comments">Comments :</label></p>
+                   <p><textarea type="comment" name="comment" cols="40" rows="8"></textarea></p>
+
+                <p><input type="checkbox" name="maillist">
+                   <label for="mailist">Put me on the list for subscription</label>
+                </p>
+                <p>
+                    <label for="where"> How did you find us</label>
+                    <select name="where">
+                        <option value="Search Engine">Search Engine</option>
+                        <option value="Social Network">Social Network</option>
+                        <option value="Words of Mouth">Words of Mouth</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </p>
+                    <label for="where"> Where do you live?</label>
+                    <select name="where">
+                        <option value="Canada">Canada</option>
+                        <option value="United States">United States</option>
+                        <option value="Mexico">Mexico</option>
+                    </select>
+                <p>
+                    
+                </p>
+
+            <p>
+                <input class="Submit" type="submit" value="Click to submit the form">
+            </p>
+
+            <p>
+                <input type="reset" value="Click to reset the form">
+            </p>
+
+            </form>
+
+    </div>
         </div>
         <footer>
             <div id="footer">

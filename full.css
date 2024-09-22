@@ -17,10 +17,19 @@ margin-left: auto;
 margin-right: auto;
 background-color:gray;
 }
+
+#short_wrapper{
+width: 960px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
+background-color:gray;
+}
+
 #right-column{
 float: right;
 width: 460px;
-height: 740px;
+height: 730px;
 margin-top: 10px;
 margin-right: 10px;
 background-color:white;
@@ -29,12 +38,39 @@ border: 2px solid black;
 #left-column{
 float: left;
 width: 460px;
-height:740px;
+height:730px;
 margin-top: 10px;
 margin-left: 10px;
 background-color: white;
 border: 2px solid black;
 }
+
+#short_right-column{
+float: right;
+width: 460px;
+height: 500px;
+margin-top: 10px;
+margin-right: 10px;
+background-color:white;
+border: 2px solid black;
+}
+#short_left-column{
+float: left;
+width: 460px;
+height:500px;
+margin-top: 10px;
+margin-left: 10px;
+background-color: white;
+border: 2px solid black;
+}
+
+.cyber{
+    width: 450px;
+    height: 450px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
 #footer{
 height:30px;
 color: white;
@@ -85,6 +121,49 @@ text-align: center;
     width: 25px;
     height: 25px;
 }
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.Form_Title{
+    font-size: 30px;
+    background-color: white;
+   
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 10px; 
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+input{
+    background-color: lightblue;
+    font-size: 17px;
+
+}
+
+textarea{
+    background-color: lightblue;
+}
+
+option{
+    background-color: lightblue;
+}
+
+select{
+    background-color: lightblue;
+
+}
+
+.Submit{
+    text-align: center;
+}
+
 
 
 
