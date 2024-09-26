@@ -5,7 +5,7 @@ background-color: black;
 background: -moz-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
     background: -webkit-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
     background: -o-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
-    background: linear-gradient(to bottom, rgb(46, 109, 204) 0%,white 100%);
+    background: linear-gradient(top bottom, rgb(46, 109, 204) 0%,white 100%);
 font-family: Verdana, Geneva, Arial, sans-serif;
 padding:0px;
 margin:0px;}
@@ -307,16 +307,7 @@ label {
     background-color: rgb(144, 191, 249);
 }
 
-.box {
-    height: 100px;
-    width: 100px;
-    float: left;
-    margin: 15px;
-    padding: 25px;
-    opacity: .5;
-    border-radius: 75px;
-    background-color: aqua;
-}
+
 
 video{
  width: 460px;
