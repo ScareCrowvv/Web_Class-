@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Native Video</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Native Video Testing</h1>
+            <video width="360" height="220" controls poster="on_record.png" autoplay loop muted id="myvid">
+                <source src="on_record.mp4" type="video/mp4">
+                <source src="on_record.ogv" type="video/ogg">
+            </video>
+            <br>
+            <button onclick="PlayPause()">Play/Pause Button</button>
+            <script>
+                var mybtn=document.getElementById("myvid");
+                function PlayPause()
+                {
+                    if(mybtn.paused)
+                        mybtn.play();
+                    else
+                        mybtn.pause();
+                }
+
+            </script>
+            <style>
+                button{
+                    background-color: black;
+                    color: white;
+                    height: 50px;
+                    border: 2px whitesmoke;
+                    box-shadow: 10px 10px 5px black;
+                    border-radius: 5px;
+                }
+                button:hover
+                {
+                    background-color: beige;
+                    color: black;
+                    height: 50px;
+                    border: 2px whitesmoke;
+                    box-shadow: -10px -10px 5px black;
+                    border-radius: 5px;
+                }
+            </style>
+        </div>
+    </body>
+</html>

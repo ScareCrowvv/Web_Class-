@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>SlideShow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+             img{width: 100%;}
+     body
+     {
+        width: 80;
+        margin: auto;
+        font-family: 'Times New Roman', Times, serif;
+     }
+     .slideshow,.frame
+     {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        margin: auto;
+     }
+     .slide{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        overflow: hidden;
+        position:absolute;
+        transition: opacity 2s;
+     }
+     .show:checked + .slide
+     {
+        opacity: 1;
+     }
+     .btn
+     {
+        display: inline-block;
+     }
+     .btn-label
+     {
+        font-size: 1rem;
+        padding: 1rem;
+        background-color: black;
+        color: white;
+        display: block;
+        text-align: center;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: background 2s;
+        color: 2s;
+     }
+     .btn-label:hover
+     {background:red;}
+     input{
+        display: none;
+     }
+
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <h1>Roses</h1>
+        <div class="slideshow"> <input type="radio" name="btn" class="show" id="one" checked="checked" />
+            <div class="slide"><a target="_blank" title="FlowerImage1" href="Image1.jpg"> <img width="512"
+                        alt="White Flower" src="Image1.jpg"></a> </div>
+            <input type="radio" name="btn" class="show" id="two" />
+            <div class="slide"> <a target="_blank" title="FlowerImage2" href="Image2.jpg"><img width="512"
+                        alt="Yellow Flower" src="Image2.jpg"></a> </div> <input type="radio" name="btn" class="show"
+                id="three" />
+            <div class="slide"> <a target="_blank" title="FlowerImage3"><img alt="English Flower" src="Image3.jpg"></a>
+            </div>
+        </div>
+        <ul>
+            <li class="btn"><label class="btn-label" for="one">1</label></li>
+            <li class="btn"><label class="btn-label" for="two">2</label></li>
+            <li class="btn"><label class="btn-label" for="three">3</label></li>
+        </ul>
+    </div>
+</body>
+</html>
