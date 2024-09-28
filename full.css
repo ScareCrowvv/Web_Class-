@@ -21,6 +21,16 @@ background-image: url(sky.png);
 background-size: 960px 800px;
 }
 
+#wrapper_project{
+width: 960px;
+height: 800px;
+margin-left: auto;
+margin-right: auto;
+background-color:gray;
+background-image: url(sky.png);
+background-size: 960px 800px;
+}
+
 
 #short_wrapper{
 width: 960px;
@@ -139,6 +149,8 @@ margin-left: 10px;
 background-color: white;
 border: 3px solid black;
 text-align: center;
+background-image: url(sky.jpg);
+background-size: auto;
 }
 
 #really_short_left-column{

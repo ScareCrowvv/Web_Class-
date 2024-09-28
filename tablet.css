@@ -30,6 +30,17 @@ background-image: url(sky.png);
 background-size: 100% auto;
 }
 
+
+#wrapper_project {width: 100%;
+height: 1630px;
+margin-left: auto;
+margin-right: auto;
+background-color:DarkGrey;
+background-image: url(sky.png);
+background-size: 100% auto;
+}
+
+
 #short_wrapper {width: 100%;
 height: auto;
 margin-left: auto;
@@ -62,6 +73,8 @@ background-color:white;
 #left-column {
 float: none;
 height:730px;
+background-image: url(sky.jpg);
+background-size: auto;
 }
 
 
@@ -74,6 +87,7 @@ background-color:white;
 
 #left-column_middle{
 float: none;
+margin-top: 20px;
 height:400px;
 background-color:white;
 }

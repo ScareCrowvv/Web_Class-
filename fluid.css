@@ -6,11 +6,22 @@ background: -moz-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%);
     background: -webkit-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
     background: -o-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%); 
     background: linear-gradient(top bottom, rgb(46, 109, 204) 0%,white 100%);
+
 font-family: Verdana, Geneva, Arial, sans-serif;
 padding:0px;
 margin:0px;}
 
 #wrapper{
+width: 960px;
+height: 800px;
+margin-left: auto;
+margin-right: auto;
+background-color:gray;
+background-image: url(sky.png);
+background-size: 960px 800px;
+}
+
+#wrapper_project{
 width: 960px;
 height: 800px;
 margin-left: auto;
@@ -138,6 +149,8 @@ margin-left: 10px;
 background-color: white;
 border: 3px solid black;
 text-align: center;
+background-image: url(sky.jpg);
+background-size: auto;
 }
 
 #really_short_left-column{
