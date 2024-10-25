@@ -1,0 +1,58 @@
+<%- include Partials/header.ejs%>
+
+    <body>
+        <div id="wrapper">
+            
+            <%- include Partials/main_nav.ejs%>
+
+            
+                <div id="left-column_middle">
+
+                    <video width="360" height="220" controls poster="/images/sky.mp4" preload="auto" autoplay loop muted id="myVid">
+
+                    <source src="/Assets/images/sky.mp4" type="video/mp4">
+
+                    </video>
+                <br>
+                <button onclick="PlayPause()">Play/Pause Button</button>
+                <script>
+                    var mybtn=document.getElementById("myVid");
+                    function PlayPause(){
+                        if(mybtn.paused)
+                            mybtn.play();
+                        else
+                            mybtn.pause();
+
+                    }
+                </script>
+                
+                
+
+
+                </div>
+                <div id="right-column">
+                    <img src="/Assets/images/Profile.png" alt="profile">
+                    <a href="https://www.linkedin.com/in/daniel-b-0455b62ba/" target="_blank">Linkedln Page</a>
+                    
+                    <h2>About</h2>
+                    
+                    <h4>My Name is Daniel I am a student at Ontario tech University currently in my second year at the program Networking & IT Security. 
+                        I have training in first aid and swim instructing to be able to do my part times which are lifeguarding and swim instructing. You can learn more through my linkedin page about my skills and experiences.</h4>
+
+                </div>
+          </div>
+        <footer>
+            <div id="footer">
+                <address><i class="fa-brands fa-google"></i>: <a href="mailto:daniel.borrelldiaz@ontariotechu.net">daniel.borrelldiaz@ontariotechu.net</a></address>
+                <address><i class="fa-brands fa-github"></i>: <a href="https://github.com/ScareCrowvv">ScareCrowvv</a></address>
+                <address><i class="fa-brands fa-linkedin"></i>: <a href="https://www.linkedin.com/in/daniel-b-0455b62ba/">Daniel</a></address>
+                    <p><img src="/Assets/images/ontario_tech.png" alt="ontario tech logo">  © 2024 by Daniel Borrell Diaz<p>
+                    
+                    
+            </div>
+        </footer>
+    
+
+        
+    </body>
+

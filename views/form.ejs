@@ -1,0 +1,71 @@
+<%- include Partials/header.ejs%>
+
+    <body>
+        <div id="wrapper">
+            
+            <%- include Partials/main_nav.ejs%>
+
+        
+            <h1 class="Form_Title">My Feedback Form</h1>
+
+            <form action="mailto:daniel.borrelldiaz@ontariotechu.net"
+                method="post" enctype="text/plain" ?subject=Mistakes
+                name="form">
+
+                <p><label for="name">Name:</label></p>
+                    <p><input class="type" type="text" name="name" placeholder="Your Complete Name" size = "48"></p>
+        
+
+                <p><label for="email">Email:</label></p>
+                   <p><input class="type" type="email" name="email" placeholder="Your Email address" size = "48"></p>
+
+                <p><label for="comments">Comments:</label></p>
+                   <p><textarea type="comment" name="comment" placeholder="Comment Here" cols="40" rows="7"></textarea></p>
+
+               
+                <p>
+                    <label for="rate"> Rate the website out of 5</label>
+                    <select name="rate">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </p>
+                    <label for="major"> What's Your Major</label>
+                    <select name="major">
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="IT">IT</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                <p><input type="checkbox" name="consent">
+                   <label for="consent">You Consent To Your Answers Being Shared Online</label>
+                </p>
+        
+                
+
+                
+            <p>
+                <input class="Submit" type="submit" value="Click to submit the form">
+            </p>
+
+            <p>
+                <input class="Submit" type="reset" value="Click to reset the form">
+            </p>
+
+            </form>
+
+          </div>
+        
+          <%- include Partials/footer.ejs%>
+    
+
+        
+    </body>
+
+
+</html>
