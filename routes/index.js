@@ -5,7 +5,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
-router.get('/home', function(req, res, next) {
+router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
@@ -13,7 +13,8 @@ router.get('/project', function(req, res, next) {
   res.render('project', { title: 'Project' });
 });
 
-router.get('/form', function(req, res, next) {
+
+router.get('/contact', function(req, res, next) {
   res.render('form', { title: 'Form' });
 });
 

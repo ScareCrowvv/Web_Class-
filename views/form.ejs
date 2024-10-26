@@ -1,71 +1,72 @@
-<%- include Partials/header.ejs%>
+<%- include Partials/header.ejs %>
 
-    <body>
-        <div id="wrapper">
-            
-            <%- include Partials/main_nav.ejs%>
-
+<body class="bg-light" style="background-image: -moz-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%);">
+    <div class="container mt-5" style="background-image: url(/Assets/images/sky.png); background-size: cover; background-position: center;"> 
         
-            <h1 class="Form_Title">My Feedback Form</h1>
+        <%- include Partials/main_nav.ejs %>
 
-            <form action="mailto:daniel.borrelldiaz@ontariotechu.net"
-                method="post" enctype="text/plain" ?subject=Mistakes
-                name="form">
+        <div class="text-center mb-4">
+            <div class="border border-primary rounded p-3" style="display: inline-block; background-color: rgb(54, 98, 151);"> 
+                <h1 class="m-0 text-white">My Feedback Form</h1>
+            </div>
+        </div>
 
-                <p><label for="name">Name:</label></p>
-                    <p><input class="type" type="text" name="name" placeholder="Your Complete Name" size = "48"></p>
-        
+        <form action="mailto:daniel.borrelldiaz@ontariotechu.net"
+              method="post" enctype="text/plain" ?subject=Mistakes
+              name="form" class="p-4 border rounded bg-white shadow" style="max-width: 600px; margin: auto;"> 
 
-                <p><label for="email">Email:</label></p>
-                   <p><input class="type" type="email" name="email" placeholder="Your Email address" size = "48"></p>
+            <div class="mb-3"> 
+                <label for="name" class="form-label">Name:</label>
+                <input class="form-control" type="text" name="name" placeholder="Your Complete Name" required>
+            </div>
 
-                <p><label for="comments">Comments:</label></p>
-                   <p><textarea type="comment" name="comment" placeholder="Comment Here" cols="40" rows="7"></textarea></p>
+            <div class="mb-3"> 
+                <label for="email" class="form-label">Email:</label>
+                <input class="form-control" type="email" name="email" placeholder="Your Email address" required>
+            </div>
 
-               
-                <p>
-                    <label for="rate"> Rate the website out of 5</label>
-                    <select name="rate">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </p>
-                    <label for="major"> What's Your Major</label>
-                    <select name="major">
-                        <option value="Computer Science">Computer Science</option>
-                        <option value="Software Engineer">Software Engineer</option>
-                        <option value="IT">IT</option>
-                        <option value="Cyber Security">Cyber Security</option>
-                        <option value="Other">Other</option>
-                    </select>
+            <div class="mb-3"> 
+                <label for="comments" class="form-label">Comments:</label>
+                <textarea class="form-control" name="comment" placeholder="Comment Here" cols="40" rows="7" required></textarea>
+            </div>
 
-                <p><input type="checkbox" name="consent">
-                   <label for="consent">You Consent To Your Answers Being Shared Online</label>
-                </p>
-        
-                
+            <div class="mb-3"> 
+                <label for="rate" class="form-label">Rate the website out of 5:</label>
+                <select name="rate" class="form-select" required>
+                    <option value="" disabled selected>Select a rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
 
-                
-            <p>
-                <input class="Submit" type="submit" value="Click to submit the form">
-            </p>
+            <div class="mb-3"> 
+                <label for="major" class="form-label">What's Your Major:</label>
+                <select name="major" class="form-select" required>
+                    <option value="" disabled selected>Select your major</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="IT">IT</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
 
-            <p>
-                <input class="Submit" type="reset" value="Click to reset the form">
-            </p>
+            <div class="form-check mb-3"> 
+                <input type="checkbox" name="consent" class="form-check-input" id="consent" required>
+                <label for="consent" class="form-check-label">You Consent To Your Answers Being Shared Online</label>
+            </div>
 
-            </form>
+            <div class="d-flex justify-content-between"> 
+                <input class="btn btn-secondary" type="reset" value="Click to reset the form">
+                <input class="btn btn-primary" type="submit" value="Click to submit the form">
+            </div>
 
-          </div>
-        
-          <%- include Partials/footer.ejs%>
+        </form>
+
+    </div>
     
-
-        
-    </body>
-
-
-</html>
+    <%- include Partials/footer.ejs %>
+</body>

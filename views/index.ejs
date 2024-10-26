@@ -1,26 +1,25 @@
+<%- include Partials/header.ejs %>
 
-<%- include Partials/header.ejs%>
+<body class="bg-light" style="background-image: -moz-linear-gradient(top, rgb(46, 109, 204) 0%, white 100%);">
+    <div class="container" style="background-image: url(/Assets/images/sky.png); background-size: cover; background-position: center; position: relative;">
+        <%- include Partials/main_nav.ejs %>
 
-
-    <body>
-        <div id="short_wrapper">
-            <%- include Partials/main_nav.ejs%>
-
-            
-                <div id="short_left-column">
-                    <img class="cyber" src="/Assets/images/CyberSecurity.png" alt="CyberSecurity">
-                </div>
-                <div id="short_right-column">
+        <div class="row justify-content-center align-items-center min-vh-100" style="position: relative; z-index: 1;">
+            <div class="col-md-6 text-center">
+                <img class="img-fluid mb-4" src="/Assets/images/CyberSecurity.png" alt="CyberSecurity" style="margin-top: 60px;">
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 border rounded bg-light shadow">
                     <h1>Hello!</h1>
-                    <h3>Welcome to my portfolio website. My name is Daniel I am a student at Ontario Tech University studying network security, to learn more visit the about page. 
-                        To view my school projects view the project page. Finally you can fill a form in the contact page so I know more info about you. </h3>
+                    <h3>
+                        Welcome to my portfolio website. My name is Daniel. I am a student at Ontario Tech University studying network security. To learn more, visit the About page. 
+                        To view my school projects, go to the Project page. You can also fill out a form on the Contact page so I can learn more about you.
+                    </h3>
 
                 </div>
-          </div>
-        
-          <%- include Partials/footer.ejs%>
-    
+            </div>
+        </div>
+    </div>
 
-        
-    </body>
-
+    <%- include Partials/footer.ejs %>
+</body>
