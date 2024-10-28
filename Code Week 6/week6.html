@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width">
+   <title>JS Bin</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="week6.js" defer></script>
+</head>
+
+<body>
+
+    <p id="cb">Perform the calculation and when you done with calculation, call the display function</p>
+
+    <script>
+        function Calculator(num1, num2, myCallback){
+            let sum = num1 + num2;
+            myCallback(sum)
+        }
+
+        function DisplayResult(something){
+            document.getElementById("cb").innerHTML = something
+        }
+
+
+        Calculator(5, 5, DisplayResult)
+
+    </script>
+
+
+</body>
+</html>
