@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Daniel Assignment 1</title>
+        <link href="full.css" rel="stylesheet" type="text/css">
+        <link href="tablet.css" rel="stylesheet" type="text/css" media=" only screen and (min-width:481px) and (max-width:959px)">
+        <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+
+    </head>
+
+    <body>
+        <div id="wrapper" >
+            <header id="banner">
+                <nav>
+                    <img src="ontario_tech.png" alt="ontario tech logo">
+                    <a class="button" href="index.html">Home</a> 
+                    <a class="button" href="form.html">Contact</a> 
+                    <a class="button" href="project.html">Project</a> 
+                    <a class="button" href="about.html">About</a>
+                    <img src="ontario_tech.png" alt="ontario tech logo">
+                </nav>
+            </header>
+
+            
+                <div id="left-column_middle">
+
+                    <video width="360" height="220" controls poster="on_record.mp4" preload="auto" autoplay loop muted id="myVid">
+
+                    <source src="sky.mp4" type="video/mp4">
+
+                    </video>
+                <br>
+                <button onclick="PlayPause()">Play/Pause Button</button>
+                <script>
+                    var mybtn=document.getElementById("myVid");
+                    function PlayPause(){
+                        if(mybtn.paused)
+                            mybtn.play();
+                        else
+                            mybtn.pause();
+
+                    }
+                </script>
+                
+                
+
+
+                </div>
+                <div id="right-column">
+                    <img src="Profile.png" alt="profile">
+                    <a href="https://www.linkedin.com/in/daniel-b-0455b62ba/" target="_blank">Linkedln Page</a>
+                    
+                    <h2>About</h2>
+                    
+                    <h4>My Name is Daniel I am a student at Ontario tech University currently in my second year at the program Networking & IT Security. 
+                        I have training in first aid and swim instructing to be able to do my part times which are lifeguarding and swim instructing. You can learn more through my linkedin page about my skills and experiences.</h4>
+
+                </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <address>Contact: <a href="mailto:daniel.borrelldiaz@ontariotechu.net">daniel.borrelldiaz@ontariotechu.net</a></address>
+                    <p><img src="ontario_tech.png" alt="ontario tech logo">  © 2024 by Daniel<p>
+                    
+                    
+            </div>
+        </footer>
+    
+
+        
+    </body>
+
+
+</html>
