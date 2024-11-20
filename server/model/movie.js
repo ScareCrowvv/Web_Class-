@@ -1,15 +1,16 @@
+const mongoose = require('mongoose');
 
-const mongoose = require("mongoose");
-
-let movieModel = mongoose.Schema({
-    Title : String,
-    Genre: String,
-    ReleaseYear: String,
-    Rating: String,
-    Description: String,
-    Status: String
-},
-{
-    collection:"movies"
+// Define movie schema with fields
+const movieSchema = new mongoose.Schema({
+    Title: String,          // Movie title
+    Genre: String,          // Genre of the movie
+    ReleaseYear: String,    // Year of release
+    Rating: String,         // Movie rating
+    Description: String,    // Description of the movie
+    Status: String          // Status
+}, {
+    collection: 'movies'    // MongoDB collection name
 });
-module.exports =mongoose.model('Movie',movieModel);
+
+// Create and export the movie model
+module.exports = mongoose.model('Movie', movieSchema);
