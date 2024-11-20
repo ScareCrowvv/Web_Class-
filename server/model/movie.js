@@ -10,6 +10,6 @@ let movieModel = mongoose.Schema({
     Status: String
 },
 {
-    collection:"movie"
+    collection:"movies"
 });
 module.exports =mongoose.model('Movie',movieModel);
