@@ -1,8 +1,11 @@
 <%- include ../Partials/header.ejs%>
+
+<body style="background-image: url(/Assets/images/background2.jpg); background-size: cover; background-position: center;">
+
 <%- include ../Partials/main_nav.ejs%>
 <div class="container">
     <div class="row">
-        <div class="offset-md-3 col-md-6">
+        <div class="offset-md-3 col-md-6" style="background: rgba(0, 0, 0, 0.7); background-attachment: fixed; color: white;">
             <form class="form" method="POST">
                 <div class="form-group">
                     <label for="titleTextField">Movie Title</label>
@@ -36,4 +39,6 @@
         </div>
     </div>
 </div>
+
+</body>
 <%- include ../Partials/footer.ejs%>

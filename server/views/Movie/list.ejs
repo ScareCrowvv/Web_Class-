@@ -1,10 +1,13 @@
 <%- include ../Partials/header.ejs %>
 
+<body style="background-image: url(/Assets/images/background2.jpg); background-size: cover; background-position: center;  ">
+    
+
     <%- include ../Partials/main_nav.ejs %>
 
     <main class="container py-5">
         <div class="row justify-content-center align-items-center">
-            <div class="col-md-10">
+            <div class="col-md-10" style="background: rgba(0, 0, 0, 0.7);">
                 <br>
                 <a href="/movieslist/add" class="btn btn-primary mb-3" style="background-color: #E50914; color: white;">
                     <i class="fas fa-plus-circle"></i> Add Movie
@@ -49,5 +52,5 @@
             </div>
         </div>
     </main>
-
+</body>
     <%- include ../Partials/footer.ejs %>
